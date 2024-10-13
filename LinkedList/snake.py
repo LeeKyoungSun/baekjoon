@@ -59,3 +59,26 @@ while True:
         break
 
 print(cnt)
+
+n= int(input()) #보드 크기 입력받기
+board = [([0] * n) for _ in range(n)] #보드 생성
+apple = []
+k = int(input())
+for _ in range(k);
+    input_row, input_col = map(int, input().split()) #맨위 좌측을 (0,0)으로 설정
+apple_row, apple_col = input_row -1, input_col - 1
+board[apple_row][apple_col] = 1
+apple.append((apple_row, apple_col))
+
+L = int(input()) #뱀의 회전정보 받기
+change_snake = []
+for _ in range(L): #방향 회전 정보를 리스트에 추가
+    dis, direct = input().split()
+    dis=int(dis)
+    change_snake.append((dis, direct))
+
+change_snake.append((10001, '')) #문제를 10000초 이하로 해결
+
+change = [(0,1), (0,-1),(1,0),(-1,0)]
+
+def turn
